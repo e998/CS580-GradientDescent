@@ -86,8 +86,8 @@ p {
 button.reset_button {
   background-color: #FA8072; 
   color: black; 
-  border: 2px solid #D62828;
-  border-radius: 5px;
+  border: 3px solid #D62828;
+  border-radius: 6px;
 
   padding:15px 20px;
   text-align: center;
@@ -103,7 +103,7 @@ button.reset_button {
 button.reset_button:hover {
   background-color: #D62828;
   color: white;
-  border-radius: 5px;
+  border-radius: 6px;
 
   padding:17px 22px;
   text-align: center;
@@ -119,8 +119,8 @@ button.reset_button:hover {
 button.undo_button {
   background-color: #B7E8EB; 
   color: black; 
-  border: 2px solid #043F98;
-  border-radius: 5px;
+  border: 3px solid #043F98;
+  border-radius: 6px;
 
   padding:15px 20px;
   text-align: center;
@@ -136,7 +136,7 @@ button.undo_button {
 button.undo_button:hover {
   background-color: #043F98;
   color: white;
-  border-radius: 5px;
+  border-radius: 6px;
 
   padding:17px 22px;
   text-align: center;
@@ -148,6 +148,42 @@ button.undo_button:hover {
   transition-duration: 0.4s;
   cursor: pointer;
 }
+
+
+.slidecontainer {
+  width: 100%;
 }
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #EE771C;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #BE1013;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #BE1013;
+  cursor: pointer;
+}
+
 
 

@@ -19,16 +19,25 @@
 
 <body>
   <h1>Linear Regression with Gradient Descent</h1>
-    <h3>The program will plot the line of best fit with your points using gradient descent. </h3>
-    <p>More information about gradient descent
-      <a href="https://www.youtube.com/watch?v=IHZwWFHWa-w" target="_blank">here</a>!
-    </p>
-    <h4>
-      Click the graph below to plot data points.
-    </h4>
+  <h3>The program will plot the line of best fit with your points using gradient descent. </h3>
+  <p>More information about gradient descent
+    <a href="https://www.youtube.com/watch?v=IHZwWFHWa-w" target="_blank">here</a>!
+  </p>
+  <h4>
+    Click the graph below to plot data points.
+  </h4>
 
-    <p>The slope of the linear regression line: </p> <p id="slope"></p>
-    <br><br>
+  <p><b>The equation of the linear regression line (y = mx + b):</b></p>
+    <p>
+      y = <p id="slope">_</p> <p>x + </p> <p id="intercept">_</p>
+    </p>
+  <br><br>
+
+  <div class="slidecontainer">
+    <p><b>Learning Rate: </b></p> <p id="learning_rate">_</p><br>
+    <input type="range" min="1" max="10" value="0.05" class="slider" id="myRange">
+  </div>
+  <br><br>
 
   <button type="button" class = "reset_button" onclick="reset();">Reset</button>
   <button type="button" class = "undo_button" onclick="undo();">Undo</button>

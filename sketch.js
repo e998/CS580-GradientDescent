@@ -10,7 +10,11 @@ function setup() {
 // Technique of coders called gradient descent of making small adjustments to weights, parameters to the slope and y-intercept based on an error based on the supervised learning process
 function gradientDescent() {
   // Learning rate: usually a small number, to reduce the size of the error
-  var learning_rate = 0.05;
+  var slider = document.getElementById("myRange");
+  var learning_rate = slider.value/100;
+  var output = document.getElementById("learning_rate");
+  output.innerHTML = slider.value/100;
+
   for (var i = 0; i < data.length; i++) {
     var x = data[i].x;
     var y = data[i].y;
@@ -41,6 +45,7 @@ function drawLine() {
   strokeWeight(2);
   line(x1, y1, x2, y2);
   document.getElementById("slope").innerHTML = m
+  document.getElementById("intercept").innerHTML = b
 }
 
 function mousePressed() {
@@ -85,6 +90,16 @@ function heart(x, y, size) {
   bezierVertex(x - size / 2, y - size / 2, x - size, y + size / 3, x, y + size);
   bezierVertex(x + size, y + size / 3, x + size / 2, y - size / 2, x, y);
   endShape(CLOSE);
+}
+
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("learning_rate");
+output.innerHTML = 0.05; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = learning_rate;
 }
 
 
