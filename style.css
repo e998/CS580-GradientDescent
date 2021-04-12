@@ -1,0 +1,153 @@
+body {
+  background-color: #FFDEA0; /*FFDF71*/
+  font-family: 'Lexend', sans-serif;
+  text-align: center;
+  font-weight: 300;
+  margin: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /*justify-items: center;*/
+  align-items: center;
+  justify-content: center; /*space-evenly;*/
+}
+.flex-section {
+  flex-grow: 1;
+  justify-items: center;
+  align-items: center;
+}
+
+#intro {
+  max-width: 877px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 50px;
+  color: #BE1013; /*CB4446 043F98*/
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 30px;
+  color: #CC5803; /*F6903D 541980*/
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+h4 {
+  font-size: 25px;
+  color: #003366;
+  padding-top: 40px;
+  padding-bottom: 2px;
+}
+
+p {
+  font-size: 20px;
+  color: #541980;
+  margin: 0;
+  padding-top: 0px;
+/*  padding-bottom: 40px;*/
+}
+
+#intro h1 {
+  margin-bottom: 0px;
+}
+
+#intro p {
+  padding-bottom: 50px;
+  font-size: 24px;
+}
+
+#images.flex-section {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  max-width: 100%;
+  /*width: 640px;*/
+  height: 420px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#intro-image {
+  max-width: 100%;
+  width: 600px;
+}
+
+button.reset_button {
+  background-color: #FA8072; 
+  color: black; 
+  border: 2px solid #D62828;
+  border-radius: 5px;
+
+  padding:15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  font-family: 'Lexend', sans-serif;
+  margin: 8px 4px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button.reset_button:hover {
+  background-color: #D62828;
+  color: white;
+  border-radius: 5px;
+
+  padding:17px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  font-family: 'Lexend', sans-serif;
+  margin: 8px 4px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button.undo_button {
+  background-color: #B7E8EB; 
+  color: black; 
+  border: 2px solid #043F98;
+  border-radius: 5px;
+
+  padding:15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  font-family: 'Lexend', sans-serif;
+  margin: 8px 4px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button.undo_button:hover {
+  background-color: #043F98;
+  color: white;
+  border-radius: 5px;
+
+  padding:17px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  font-family: 'Lexend', sans-serif;
+  margin: 8px 4px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+}
+
+

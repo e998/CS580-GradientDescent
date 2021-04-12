@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Linear Regression with Gradient Descent</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+    <script src="sketch.js"></script>
+  </head>
+
+<body>
+  <h1>Linear Regression with Gradient Descent</h1>
+    <h3>The program will plot the line of best fit with your points using gradient descent. </h3>
+    <p>More information about gradient descent
+      <a href="https://www.youtube.com/watch?v=IHZwWFHWa-w" target="_blank">here</a>!
+    </p>
+    <h4>
+      Click the graph below to plot data points.
+    </h4>
+
+    <p>The slope of the linear regression line: </p> <p id="slope"></p>
+    <br><br>
+
+  <button type="button" class = "reset_button" onclick="reset();">Reset</button>
+  <button type="button" class = "undo_button" onclick="undo();">Undo</button>
+  <br>
+
+</body>
+
+</html>
+
+
